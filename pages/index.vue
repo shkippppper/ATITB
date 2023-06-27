@@ -12,6 +12,8 @@ export default {
 <style scoped lang="scss">
 .index-container {
     background: red;
+    font-weight: 400;
+
     .next-index {
         background: yellow;
     }
