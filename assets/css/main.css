@@ -5,24 +5,31 @@
 }
 
 :root {
-    --gray-50: #F9FAFB;
-    --gray-100: #F2F4F7;
-    --gray-200: #E4E7EC;
-    --gray-300: #D0D5DD;
-    --gray-400: #98A2B3;
-    --gray-500: #667085;
-    --gray-700: #344054;
-    --gray-800: #1D2939;
-    --gray-900: #101828;
+    --primary-light: #272643;
+    --secondary-light: #92a6ca;
+    --tertiary-light: #bae8e8;
+    --background-light: #e3f6f5;
+    --shadow-light: #3e98cc;
 
-    --error-50: #FEF3F2;
-    --error-200: #FECDCA;
-    --error-300: #FDA29B;
-    --error-600: #D92D20;
-    --error-700: #B42318;
-    --error-800: #912018;
-
-    --success-500: #12B76A;
-
-    --warning-100: #FEF0C7;
+    --primary: #e3f6f5;
+    --secondary: #bae8e8;
+    --tertiary: #92a6ca;
+    --background: #272643;
+    --shadow: #2c698d;
 }
+
+/* #app.light-theme, #app.dark-theme {
+    --primary: var(--primary-light);
+    --secondary: var(--secondary-light);
+    --tertiary: var(--tertiary-light);
+    --background: var(--background-light);
+    --shadow: var(--shadow-light);
+}
+
+#app.dark-theme {
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --tertiary: var(--tertiary-dark);
+    --background: var(--background-dark);
+    --shadow: var(--shadow-dark);
+} */
