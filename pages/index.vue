@@ -29,7 +29,7 @@ export default {
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-color: aquamarine;
+  background-color: var(--background);
   .content-container {
     padding: 128px;
     display: grid;
