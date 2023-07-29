@@ -1,26 +1,22 @@
 <template lang="pug">
 .asd 
-    EchoesDetailedCard(:data="")
-    img(:src="cardData.image")
+    EchoesDetailedCard(v-for="hero in heroesData" :data="hero" :key="hero.id")
 </template>
 
 <script>
 import EchoesDetailedCard from "~/components/Detailed/EchoesDetailedCard.vue"
-import image from "~/Games/expert_druid.png"
+import gamedata from "../../data/echoes/heroes"
 
 export default {
     components: {
         EchoesDetailedCard
     },
-    data() {
-        return {
-            cardData:{
-                image: image,
-                name: "Expert Druid",
-                dmg: "123"
-            }
+    data(){
+        return{
+            heroesData: gamedata
         }
-    },
+    }
+    
 };
 </script>
 
