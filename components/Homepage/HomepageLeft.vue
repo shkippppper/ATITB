@@ -2,11 +2,8 @@
 .content-container
     .main-text HI!
     .main-text I'm Akaki.
-    .secondrary-text I am a front-end developer with a passion for building user friendly and performant SPAs and JAMstack sites.
-    .buttons
-        DefaultButton.default-button Play My Games
-        DefaultButton.default-button Discover My Projects
-
+    .secondrady-text I take immense pride in crafting highly engaging, intuitive, and performance-optimized Single Page Applications (SPAs) and JAMstack websites. In this rapidly evolving digital landscape, I believe in keeping pace with the latest trends and continuously expanding my skill set.
+    DefaultButton(@clickedbtn="changePage") asd
 
 </template>
 
@@ -17,6 +14,11 @@ export default{
     name: 'HomepageLeft',
     components: {
         DefaultButton
+    },
+    methods: {
+        changePage(){
+            this.$router.push({ name: 'projects' });
+        }
     }
 }
 
@@ -26,26 +28,9 @@ export default{
 .content-container{
     .main-text{
         color: var(--tertiary);
-        margin: 20px 0;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 60px;
-        line-height: 82px;
-    }
-
-    .secondrary-text{
-        color: var(--tertiary);
-        margin: 20px 0;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 42px;
-    }
-    .buttons{
-        margin: 50px 0;
-        display: flex;
-        gap: 30px;
-    }
-    .default-button{
-
+        line-height: 72px;
     }
 }
 
