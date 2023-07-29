@@ -1,6 +1,6 @@
 <template lang="pug">
 .main-container
-    .content-container
+    .main-content-container
         HomepageLeft
         HomepageRight
 </template>
@@ -29,8 +29,8 @@ export default {
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-color: aquamarine;
-  .content-container {
+  background-color: var(--background);
+  .main-content-container {
     padding: 128px;
     display: grid;
     grid-template-columns: 1fr 1fr;

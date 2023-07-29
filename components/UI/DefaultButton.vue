@@ -19,7 +19,7 @@ export default {
 <style scoped lang="scss">
 .def-button {
     background-color: var(--shadow);
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     display: inline-block;
     .button-container{
@@ -28,9 +28,9 @@ export default {
         font-size: 20px;
         line-height: 30px;
         border-radius: inherit;
-        background-color: var(--background);
+        background-color: var(--tertiary);
         transform: translate(-10px, -10px);
-        color: var(--primary);
+        color: var(--background);
 
         &:hover{
             transform: translate(-6px, -6px);
